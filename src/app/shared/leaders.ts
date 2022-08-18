@@ -33,8 +33,8 @@ export const LEADERS :Leader[]=[
   },
   {
     id: '3',
-    name: 'Alberto Somayya',
-    image: '/assets/images/alberto.png',
+    name: 'Smaidi Reda',
+    image: '/assets/images/me.png',
     designation: 'Executive Chef',
     abbr: 'EC',
     featured: true,
