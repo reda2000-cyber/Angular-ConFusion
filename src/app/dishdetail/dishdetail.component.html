@@ -52,7 +52,7 @@
         <div fxFlex  class="form-size">
 
 
-          <p *ngIf="commentForm.value.author">{{commentForm.value.comment}}<br>
+          <p *ngIf="commentForm.value.author ">{{commentForm.value.comment}}<br>
             {{commentForm.value.rating}} Stars<br>
             - - {{commentForm.value.author}} </p>
 
@@ -94,8 +94,12 @@
   </div>
 
 
-  <div fxFlex [hidden]="dish">
+  <div fxFlex [hidden]="dish || errmsg">
     <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
+  </div>
+  <div fxFlex *ngIf="errmsg">
+    <h2>Error</h2>
+    <h4>{{errmsg}}</h4>
   </div>
 
 
